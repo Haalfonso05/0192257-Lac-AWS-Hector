@@ -31,7 +31,7 @@ Resources:
         - !Ref ServerSecurityGroupClase
       Tags:
         - Key: Name
-          Value: EC2-Clase-CF
+          Value: EC2-Hector-CF
         - Key: Proyecto
           Value: Class-CloudFormation
       UserData:
@@ -60,10 +60,10 @@ Resources:
               .tag { display: inline-block; background: #ff9900; color: #111;
                      font-weight: 700; font-size: 12px; padding: 4px 10px;
                      border-radius: 20px; letter-spacing: 1px; }
-              h1 { color: #ffb84d; margin: 16px 0 4px; }
+              h1 { color: #ff6bcb; margin: 16px 0 4px; }
               h2 { font-weight: 400; color: #9cc3e6; margin: 0 0 20px; font-size: 18px; }
               ul { padding-left: 20px; line-height: 1.7; }
-              a { color: #ffb84d; }
+              a { color: #ah9cbc; }
               footer { margin-top: 20px; font-size: 13px; color: #8aa4bd; }
             </style>
           </head>
@@ -71,7 +71,7 @@ Resources:
             <div class="card">
               <span class="tag">CLOUD COMPUTING · UFPSO</span>
               <h1>${InstanceDescription} 👏</h1>
-              <h2>Hola desde CloudFormation con GitHub 🚀</h2>
+              <h2>Hola desde CloudFormation con GitHub - Version 2</h2>
               <p><strong>HECTOR AUGUSTO ALFONSO CASTILLA</strong> · Código 0192257<br>
                  Ingeniería de Sistemas · Universidad Francisco de Paula Santander Ocaña</p>
               <p>Esta página fue publicada sin entrar al servidor: el repositorio en GitHub
@@ -81,7 +81,7 @@ Resources:
                 <li>Automatización: GitHub Actions</li>
                 <li>Servidor: EC2 t3.micro con Apache</li>
               </ul>
-              <p><a href="https://github.com/Haalfonso05/0192257-Lac-AWS-Hector</a></p>
+              <p><a href="https://github.com/Haalfonso05/0192257-Lac-AWS-Hector"</a></p>
               <footer>Docente: Wilder Andrés Duarte Neira</footer>
             </div>
           </body>
@@ -105,7 +105,7 @@ Outputs:
 
   InstanceId:
     Description: ID de la instancia EC2
-    Value: !Ref MyInstanceClase
+    Value: !Ref MyInstanceClaseV2
 
   PublicIP:
     Description: IP publica de la instancia
