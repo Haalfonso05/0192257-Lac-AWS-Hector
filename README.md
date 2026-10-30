@@ -1,4 +1,4 @@
-# CODIGO-nombre-apellido-iac-aws
+# CODIGO-hecto-alfonso-iac-aws
 
 Proyecto del taller de Cloud Computing (Ingeniería de Sistemas – UFPSO).
 
