@@ -22,7 +22,7 @@ Resources:
   # Para recrear la instancia (y que User Data vuelva a correr) cambia este nombre,
   # por ejemplo a MyInstanceClaseV2, y actualizalo tambien en los Outputs.
 
-  MyInstanceClase:
+  MyInstanceClaseV2::
     Type: AWS::EC2::Instance
     Properties:
       ImageId: !Ref LatestAmiId
@@ -31,7 +31,7 @@ Resources:
         - !Ref ServerSecurityGroupClase
       Tags:
         - Key: Name
-          Value: EC2-Hector-CF
+          Value: EC2-Hector-V2
         - Key: Proyecto
           Value: Class-CloudFormation
       UserData:
@@ -63,7 +63,7 @@ Resources:
               h1 { color: #ff6bcb; margin: 16px 0 4px; }
               h2 { font-weight: 400; color: #9cc3e6; margin: 0 0 20px; font-size: 18px; }
               ul { padding-left: 20px; line-height: 1.7; }
-              a { color: #ah9cbc; }
+              a { color: #af9cbc; }
               footer { margin-top: 20px; font-size: 13px; color: #8aa4bd; }
             </style>
           </head>
@@ -81,7 +81,7 @@ Resources:
                 <li>Automatización: GitHub Actions</li>
                 <li>Servidor: EC2 t3.micro con Apache</li>
               </ul>
-              <p><a href="https://github.com/Haalfonso05/0192257-Lac-AWS-Hector"</a></p>
+              <p><a href="https://github.com/Haalfonso05/0192257-Lac-AWS-Hector">Ver repositorio</a></p>
               <footer>Docente: Wilder Andrés Duarte Neira</footer>
             </div>
           </body>
@@ -109,8 +109,8 @@ Outputs:
 
   PublicIP:
     Description: IP publica de la instancia
-    Value: !GetAtt MyInstanceClase.PublicIp
+    Value: !GetAtt MyInstanceClaseV2.PublicIp
 
   WebsiteURL:
     Description: URL para abrir la pagina web
-    Value: !Sub http://${MyInstanceClase.PublicIp}
+    Value: !Sub http://${MyInstanceClaseV2.PublicIp}
