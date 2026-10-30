@@ -15,8 +15,8 @@ personalizada. La infraestructura está definida en `templates/template.yaml`
 
 ## Estudiante
 
-- Nombre: TU NOMBRE COMPLETO
-- Código: TU_CODIGO
+- Nombre: Hector Augusto Alfonso Castilla
+- Código: 0192257
 - Docente: Wilder Andrés Duarte Neira
 
 ## Sitio web desplegado
