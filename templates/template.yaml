@@ -22,7 +22,7 @@ Resources:
   # Para recrear la instancia (y que User Data vuelva a correr) cambia este nombre,
   # por ejemplo a MyInstanceClaseV2, y actualizalo tambien en los Outputs.
 
-  MyInstanceClaseV2::
+  MyInstanceClaseV2:
     Type: AWS::EC2::Instance
     Properties:
       ImageId: !Ref LatestAmiId
@@ -31,7 +31,7 @@ Resources:
         - !Ref ServerSecurityGroupClase
       Tags:
         - Key: Name
-          Value: EC2-Hector-V2
+          Value: EC2-Hector-v2
         - Key: Proyecto
           Value: Class-CloudFormation
       UserData:
@@ -48,7 +48,7 @@ Resources:
           <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>TU NOMBRE | IaC AWS</title>
+            <title>Hector Alfonso | IaC AWS</title>
             <style>
               * { box-sizing: border-box; }
               body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif;
@@ -63,7 +63,9 @@ Resources:
               h1 { color: #ff6bcb; margin: 16px 0 4px; }
               h2 { font-weight: 400; color: #9cc3e6; margin: 0 0 20px; font-size: 18px; }
               ul { padding-left: 20px; line-height: 1.7; }
-              a { color: #af9cbc; }
+              a { color: #ff9cbc; }
+              .foto { width: 100%; max-width: 320px; border-radius: 12px;
+                      display: block; margin: 16px auto; }
               footer { margin-top: 20px; font-size: 13px; color: #8aa4bd; }
             </style>
           </head>
@@ -72,6 +74,7 @@ Resources:
               <span class="tag">CLOUD COMPUTING · UFPSO</span>
               <h1>${InstanceDescription} 👏</h1>
               <h2>Hola desde CloudFormation con GitHub - Version 2</h2>
+              <img class="foto" src="https://imgs.search.brave.com/LLVogTsEEa64JAILKXWjVJNX3Na_v1biE6IvjVEhEn8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtd2l4bXAtZWQz/MGE4NmI4YzRjYTg4/Nzc3MzU5NGMyLndp/eG1wLmNvbS9mLzQ1/OGY2MjYwLTZkMmYt/NDk3Yi1hMjEwLTk4/MWMwNzdkNGVjMS9k/ZzF0OG8xLTFhMDk2/MWQyLTI4YWItNDQx/ZC1iMDJhLWM4ZjVk/NTcyNDczOS5wbmcv/djEvZmlsbC93XzU4/MyxoXzM1MCxxXzcw/LHN0cnAvZml0el9z/eWxwaGlldHRlX21p/bmltYWxpc3RfbXVz/aG9rdV90ZW5zZWlf/aWlfYnlfaW1vN19k/ZzF0OG8xLTM1MHQu/anBnP3Rva2VuPWV5/SjBlWEFpT2lKS1Yx/UWlMQ0poYkdjaU9p/SklVekkxTmlKOS5l/eUp6ZFdJaU9pSjFj/bTQ2WVhCd09qZGxN/R1F4T0RnNU9ESXlO/alF6TnpOaE5XWXda/RFF4TldWaE1HUXlO/bVV3SWl3aWFYTnpJ/am9pZFhKdU9tRndj/RG8zWlRCa01UZzRP/VGd5TWpZME16Y3pZ/VFZtTUdRME1UVmxZ/VEJrTWpabE1DSXNJ/bTlpYWlJNlcxdDdJ/bWhsYVdkb2RDSTZJ/anc5TnpZNElpd2lj/R0YwYUNJNklpOW1M/elExT0dZMk1qWXdM/VFprTW1ZdE5EazNZ/aTFoTWpFd0xUazRN/V013Tnpka05HVmpN/UzlrWnpGME9HOHhM/VEZoTURrMk1XUXlM/VEk0WVdJdE5EUXha/QzFpTURKaExXTTRa/alZrTlRjeU5EY3pP/UzV3Ym1jaUxDSjNh/V1IwYUNJNklqdzlN/VEk0TUNKOVhWMHNJ/bUYxWkNJNld5SjFj/bTQ2YzJWeWRtbGpa/VHBwYldGblpTNXZj/R1Z5WVhScGIyNXpJ/bDE5LlpRdUZfNzZp/MEpSc2otTHhPM1hN/aUNacS1DWmZxRjNa/UGhwOUl5aTNESTg" alt="Imagen">
               <p><strong>HECTOR AUGUSTO ALFONSO CASTILLA</strong> · Código 0192257<br>
                  Ingeniería de Sistemas · Universidad Francisco de Paula Santander Ocaña</p>
               <p>Esta página fue publicada sin entrar al servidor: el repositorio en GitHub
